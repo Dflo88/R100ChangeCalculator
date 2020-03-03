@@ -58,7 +58,7 @@ class App extends Component {
             dimes: Math.floor(Math.abs(denominationRequired[5])),
             nickels: Math.floor(Math.abs(denominationRequired[6])),
             pennies: Math.abs(Math.round(denominationRequired[7])),
-          })
+          });
       // This else if statement will execute if exact change was provided and no change is due.
       // It will update the state to blank values for each denomination and provide a message. 
       } else if (Math.sign(changeDue) == 0){
